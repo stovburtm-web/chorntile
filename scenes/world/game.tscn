@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bygj282raqrpo"]
+
+[node name="Game" type="Node2D" unique_id=2142966203]
+
+[node name="Label" type="Label" parent="." unique_id=1470308550]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "TODO"
