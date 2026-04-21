@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://bwdbn32llbhpa"]
+[gd_scene format=3 uid="uid://bund116tugdox"]
 
-[ext_resource type="Script" uid="uid://b5mj25p6imor5" path="res://scenes/main/main_menu.gd" id="1_4l7av"]
+[ext_resource type="Script" path="res://scenes/main/main_menu.gd" id="1_sd5it"]
 
 [node name="MainMenu" type="Control" unique_id=50503279]
 layout_mode = 3
@@ -9,7 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_4l7av")
+script = ExtResource("1_sd5it")
 
 [node name="Label" type="Label" parent="." unique_id=341763647]
 layout_mode = 1
