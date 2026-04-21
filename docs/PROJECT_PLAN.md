@@ -308,14 +308,14 @@ Phase 1 ростер героїв:
 
 Кожен мілстоун = 1 PR зі сценою-демкою. Після кожного — прожити 5 хв у редакторі й перевірити "feel".
 
-### **M0 — Фундамент** ← МИ ТУТ
+### **M0 — Фундамент** ✅ ЗАКРИТО
 - [x] Godot-проект 4.6, репо, рімоут.
 - [x] `docs/PROJECT_PLAN.md`, `docs/LEARNING_PATH.md`.
 - [x] `.github/copilot-instructions.md`.
-- [ ] `.gitignore`, `.gitattributes`, структура тек.
-- [ ] `main.tscn` → `main_menu.tscn` → `game.tscn` (порожня сцена з hello world).
+- [x] `.gitignore`, `.gitattributes`, структура тек.
+- [x] `main_menu.tscn` (Label "chorntile" + кнопка New Game) → `game.tscn` (placeholder).
 
-### **M1 — Тайлова сітка і камера**
+### **M1 — Тайлова сітка і камера** ← МИ ТУТ
 - [ ] `game.tscn` з `TileMapLayer` (грунт 20×20, 64×64 px).
 - [ ] Top-down перспектива (ізометрію розглянемо у Phase 2).
 - [ ] Камера 2D з pan (drag правою кнопкою / WASD) та zoom (коліщатко).
