@@ -1,27 +1,39 @@
-[gd_scene load_steps=3 format=3 uid="uid://bygj282raqrpo"]
+[gd_scene format=3 uid="uid://bygj282raqrpo"]
 
-[ext_resource type="Script" path="res://scenes/world/game.gd" id="1_game"]
-[ext_resource type="Script" path="res://scenes/world/game_camera.gd" id="2_cam"]
+[ext_resource type="Script" uid="uid://i7ib22s2n7ww" path="res://scenes/world/game.gd" id="1_game"]
+[ext_resource type="PackedScene" uid="uid://crstmodal001" path="res://scenes/ui/restore_modal.tscn" id="2_3iwug"]
+[ext_resource type="Script" uid="uid://cxecq1on7gjel" path="res://scenes/world/game_camera.gd" id="2_cam"]
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" unique_id=1604198907]
 script = ExtResource("1_game")
 
-[node name="GridOverlay" type="Node2D" parent="."]
+[node name="RestoreModal" parent="." unique_id=1659895872 instance=ExtResource("2_3iwug")]
 
-[node name="HoverHighlight" type="ColorRect" parent="."]
+[node name="GridOverlay" type="Node2D" parent="." unique_id=290541914]
+
+[node name="Buildings" type="Node2D" parent="." unique_id=1659683429]
+
+[node name="HoverHighlight" type="ColorRect" parent="." unique_id=32850684]
 offset_right = 64.0
 offset_bottom = 64.0
-color = Color(1, 1, 1, 0.25)
 mouse_filter = 2
+color = Color(1, 1, 1, 0.25)
 
-[node name="GameCamera" type="Camera2D" parent="."]
+[node name="GameCamera" type="Camera2D" parent="." unique_id=2119437646]
 script = ExtResource("2_cam")
 
-[node name="UI" type="CanvasLayer" parent="."]
+[node name="UI" type="CanvasLayer" parent="." unique_id=1134486647]
 
-[node name="DebugLabel" type="Label" parent="UI"]
+[node name="DebugLabel" type="Label" parent="UI" unique_id=10289850]
 offset_left = 12.0
 offset_top = 12.0
 offset_right = 200.0
 offset_bottom = 36.0
 text = "tile: —"
+
+[node name="PowerLabel" type="Label" parent="UI" unique_id=952602272]
+offset_left = 220.0
+offset_top = 12.0
+offset_right = 392.0
+offset_bottom = 35.0
+text = "Бойова потужність: 0"

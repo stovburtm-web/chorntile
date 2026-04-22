@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cbvc1vqbuilt"]
+
+[node name="VisualBuilt" type="Node2D"]
+
+[node name="Rect" type="ColorRect" parent="."]
+offset_right = 128.0
+offset_bottom = 128.0
+color = Color(0.55, 0.45, 0.35, 1)
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 0.0
+offset_top = 48.0
+offset_right = 128.0
+offset_bottom = 80.0
+text = "Сільрада"
+horizontal_alignment = 1
+vertical_alignment = 1

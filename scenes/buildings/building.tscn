@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cbldgbase001"]
+
+[ext_resource type="Script" path="res://scripts/components/building.gd" id="1_building"]
+
+[node name="Building" type="Node2D"]
+script = ExtResource("1_building")
+
+[node name="Visual" type="Node2D" parent="."]
+
+[node name="BuildLabel" type="Label" parent="."]
+offset_left = -16.0
+offset_top = -28.0
+offset_right = 160.0
+offset_bottom = -4.0
+text = "Будується 5.0с"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false

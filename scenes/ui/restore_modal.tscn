@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://crstmodal001"]
+
+[ext_resource type="Script" path="res://scenes/ui/restore_modal.gd" id="1_script"]
+
+[node name="RestoreModal" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1_script")
+
+[node name="Dim" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.5)
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -80.0
+offset_right = 200.0
+offset_bottom = 80.0
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Panel/Margin/VBox"]
+layout_mode = 2
+text = "Відновити?"
+horizontal_alignment = 1
+theme_override_font_sizes/font_size = 20
+
+[node name="Description" type="Label" parent="Panel/Margin/VBox"]
+layout_mode = 2
+text = "Підтвердіть дію."
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/Margin/VBox"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 16
+
+[node name="YesButton" type="Button" parent="Panel/Margin/VBox/Buttons"]
+layout_mode = 2
+text = "Так"
+custom_minimum_size = Vector2(90, 36)
+
+[node name="NoButton" type="Button" parent="Panel/Margin/VBox/Buttons"]
+layout_mode = 2
+text = "Ні"
+custom_minimum_size = Vector2(90, 36)
